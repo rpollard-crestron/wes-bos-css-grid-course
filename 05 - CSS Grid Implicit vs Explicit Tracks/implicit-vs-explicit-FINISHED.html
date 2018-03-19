@@ -24,8 +24,12 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: 200px 400px;
+      /* Define sizes for explicitely created rows and columns */
+      /* 1st column will be 200px, 2nd will be 400px */
+      /* 1st row will be 50px, 2nd will be 100px */
+      grid-template-columns: 200px 1fr;
       grid-template-rows: 50px 100px;
+      /* Define sizes for implicitely created rows and columns */
       grid-auto-rows: 100px;
       grid-auto-columns: 100px;
     }
